@@ -2,9 +2,9 @@ package com.example.partalcarrionjesus.temperature;
 
 public class Temperature {
     private double temperature;
-    public Temperature(){
 
-    }
+    public Temperature(){}
+
     public void setTemperature(double t) {
         this.temperature = t;
     }
@@ -13,12 +13,14 @@ public class Temperature {
         return this.temperature;
     }
 
-    public double toCelsius() {
-        return ((temperature - 32)*5)/9;
+    public String toCelsius() {
+        double celsius = ((temperature - 32)*5)/9;
+        return Double.toString(celsius);
     }
 
-    public double toFarenheit() {
-        return (9/5) * temperature + 32;
+    public String toFahrenheit() {
+        double fahrenheit = ((9.0/5.0) * temperature) + 32;
+        return Double.toString(fahrenheit);
     }
 
 
