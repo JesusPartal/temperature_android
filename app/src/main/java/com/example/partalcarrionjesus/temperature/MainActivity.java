@@ -49,11 +49,11 @@ public class MainActivity extends AppCompatActivity {
 
                         if (onRadioButtonClicked(rb_Fahrenheit)) {
                             String celsius = temperature.toCelsius();
-                            messageResult = inputTemperature + " Fahrenheit is " + celsius + " Celsius";
+                            messageResult = inputTemperature + " °Fahrenheit is " + celsius + " °Celsius";
 
                         } else {
                             String fahrenheit = temperature.toFahrenheit();
-                            messageResult = inputTemperature + " Celsius is \n" + fahrenheit + " Fahrenheit";
+                            messageResult = inputTemperature + " °Celsius is \n" + fahrenheit + " °Fahrenheit";
                         }
 
 
