@@ -21,9 +21,11 @@ public class ResultsActivity extends AppCompatActivity {
         TextView tv_message = (TextView) findViewById(R.id.tv_message);
         tv_message.setText(message);
 
+        // if the bt_share button is clicked
         bt_share.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // create new intent to create email with the message
                 Intent shareIntent = new Intent(Intent.ACTION_SENDTO);
                 shareIntent.setData(Uri.parse("mailto:"));
                 shareIntent.putExtra(Intent.EXTRA_SUBJECT, "My conversion");
